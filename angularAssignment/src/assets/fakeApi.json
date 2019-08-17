@@ -1,0 +1,48 @@
+{
+  "videoList": [
+    {
+      "videoName": "Home",
+      "videoPath": "assets/mp4/sample2.mp4"
+    },
+    {
+      "videoName": "Introduction to HTML5",
+      "videoPath": "assets/mp4/sample4.mp4"
+    }
+  ],
+  "videoAdd": [
+    {
+      "id": 1,
+      "videoNo": "1",
+      "approved": true,
+      "videoName": "MiG-31: The Near-Space Plane",
+      "videoUrl": "https://www.youtube.com/watch?v=h_w_0zUs9ac",
+      "noEditorTitle": true,
+      "noEditorUrl": true
+    },
+    {
+      "id": 2,
+      "approved": true,
+      "videoNo": "2",
+      "videoName": "The very Best Smart Watch",
+      "videoUrl": "https://www.youtube.com/watch?v=_GpXYRcBZYc"
+    },
+    {
+      "id": 3,
+      "approved": true,
+      "videoNo": "3",
+      "videoName": "Chasing 300 - The World’s Fastest Motorcycle",
+      "videoUrl": "https://www.youtube.com/watch?v=E8RpedLHvc4",
+      "noEditorTitle": true,
+      "noEditorUrl": true
+    },
+    {
+      "videoNo": "4",
+      "approved": false,
+      "videoName": "1234",
+      "videoUrl": "https://www.example.com",
+      "id": 4,
+      "noEditorTitle": false,
+      "noEditorUrl": false
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="">
+              Title:
+            </span>&nbsp;&nbsp;
+            <input type="text" class="form-control" name="videoName" [(ngModel)]="videoName" >
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    <br>
+    <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="">
+               URL:
+            </span>&nbsp;&nbsp;
+            <input type="text" class="form-control" name="videoUrl" [(ngModel)]="videoUrl">
+            <br>
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+<div class="row"><br></div>
+<div class="row">
+<span class="input-group-btn">
+        <button class="btn btn-primary" type="button" (click)="add()">Add Video</button>
+</span>
+</div>
+<br>
+<div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+            <th>NO</th>
+            <th>title</th>
+            <th>url</th>
+            <th colspan="3">Operation</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of videoList;let i=index">
+            <tr>
+                <td>{{item.videoNo}}</td>
+                <td (click)="canEditor(item.id)"><input type="text" class="form-control" [(ngModel)]="item.videoName" [disabled]="item.noEditorTitle"></td>
+                <td (click)="canEditor(item.id)"><input type="url" class="form-control" [(ngModel)]="item.videoUrl" [disabled]="item.noEditorUrl" ></td>
+                <td ><button class="btn btn-primary" type="button" (click)="editor(item.id)">Edit</button></td>
+                <td><button class="btn btn-primary" type="button" (click)="delete(item.id)">Delete</button></td>
+                <td><button class="btn btn-primary" type="button" (click)="approve(item.id)"  [ngClass]="{'disabled': item.approved}" >Approve</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

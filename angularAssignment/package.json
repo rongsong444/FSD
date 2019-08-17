@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "json:server": "json-server --watch src/assets/fakeApi.json"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +20,11 @@
     "@angular/platform-browser": "~8.1.1",
     "@angular/platform-browser-dynamic": "~8.1.1",
     "@angular/router": "~8.1.1",
+    "@types/bootstrap": "^4.3.1",
+    "@types/jquery": "^3.3.30",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "json-server": "^0.15.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"

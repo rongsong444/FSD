@@ -1,0 +1,19 @@
+<div id='media-controls' style="margin-bottom: 5px;">
+    <div id="progressWrap">
+        <div id="playProgress">
+            <span id="showProgress"></span>
+        </div>
+    </div>
+    <button type='button' id='replay-button' (click)="replayMedia()">
+        <em class="fas fa-reply"></em>
+    </button>	
+    <button type="button" id='play-pause-button'  (click)="togglePlayPause()">
+        <em class="fas fa-play-circle"></em>
+    </button>
+          <button type='button' id='stop-button' (click)="stopPlayer()"><em class='fas fa-stop-circle'></em></button>
+          <button type='button' id='volume-inc-button' (click)='changeVolume("+")'><em class="fas fa-plus-circle"></em></button>
+          <button type='button' id='volume-dec-button'  (click)='changeVolume("-");'><em class="fas fa-minus-circle"></em></button>
+    <button type='button' id='mute-button'  (click)='toggleMute();'><em id='mute-icon' class="fas fa-volume-up"></em><span id='video-volume' class="badge badge-light" style="color: lightblue;"></span></button>
+    <button type='button' id='like-button'  (click)='likeVideo()'><em class="far fa-thumbs-up"></em><span id='video-like' class="badge badge-light" style="color: green;"></span></button>
+    <button type='button' id='unlike-button' (click)='unlikeVideo()'><em class="far fa-thumbs-down"></em><span id='video-unlike' class="badge badge-light" style="color: red;"></span></button>
+</div>

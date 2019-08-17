@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12" style="padding: 0px;margin: 0px;">
+      <p>Angular Video Player</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12" style="padding: 0px;margin: 0px;">
+          <div id='videodiv'>
+          <video id='media-video' width='100%' height="auto">
+              <source src='assets/mp4/sample2.mp4' type='video/mp4'>
+          </video>
+          </div>
+          <app-controls [videoPlayer]="videoPlayer"></app-controls>
+          <app-playlist [videoPlayer]="videoPlayer" (outer)="runParent($event)"></app-playlist>
+        </div>
+      </div>
+      <br>
+      <app-addplay></app-addplay>
+    </div>
+  </div>
+  </div>
+  
+  
