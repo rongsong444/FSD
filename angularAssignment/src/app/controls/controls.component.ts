@@ -75,15 +75,6 @@ ngOnInit() {
 	}
 	});
   
-  //this.videoPlayer.play();
-	
-	
-  // Add a listener for the play and pause events so the buttons state can be updated
-	
-	
-	// initial web storage
-
-
 	this.volume.innerText = this.videoPlayer.volume*10;
 
 	this.controlsService.getDemoData().then((res) => {

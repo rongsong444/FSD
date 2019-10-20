@@ -1,0 +1,10 @@
+.player {
+  text-align: center;
+}
+
+.player-content{ 
+  margin:0 auto;
+  width:70%;
+  height:50%;
+}
+

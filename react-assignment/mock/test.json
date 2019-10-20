@@ -1,0 +1,37 @@
+{
+  "videoList": [
+    {
+      "videoName": "Home",
+      "videoPath": "assets/mp4/sample2.mp4"
+    },
+    {
+      "videoName": "Introduction to HTML5",
+      "videoPath": "assets/mp4/sample4.mp4"
+    }
+  ],
+  "videoAdd": [
+    {
+      "id": 1,
+      "videoNo": "1",
+      "approved": true,
+      "videoName": "MiG-31: The Near-Space Plane",
+      "videoUrl": "https://www.youtube.com/watch?v=h_w_0zUs9ac",
+      "noEditorTitle": true,
+      "noEditorUrl": true
+    },
+    {
+      "id": 2,
+      "approved": true,
+      "videoNo": "2",
+      "videoName": "The very Best Smart Watch",
+      "videoUrl": "https://www.youtube.com/watch?v=_GpXYRcBZYc"
+    },
+    {
+      "videoNo": 3,
+      "approved": false,
+      "videoName": "wewer",
+      "videoUrl": "http://wewew.com",
+      "id": 3
+    }
+  ]
+}
